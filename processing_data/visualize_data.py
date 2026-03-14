@@ -58,7 +58,7 @@ total_images = sum(len(images) for images in all_letters_landmarks.values())
 print(f"Total number of images: {total_images}")
 
 subset_letters_landmarks = {}
-sample_per_letter = 3000  # adjust for speed
+sample_per_letter = 100  # adjust for speed
 
 for letter, images in all_letters_landmarks.items():
     images_list = list(images)  # <-- convert to a list
